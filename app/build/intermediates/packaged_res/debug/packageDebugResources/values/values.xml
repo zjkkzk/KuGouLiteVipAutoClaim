@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <item>com.kugou.android.lite</item>
+    </string-array>
+    <string name="app_name">酷狗概念版VIP助手</string>
+    <string name="btn_refresh">刷新状态</string>
+    <string name="btn_trigger">手动触发领取</string>
+    <string name="desc_info">模块说明：\n本模块在酷狗概念版启动时自动检查并领取每日听歌会员。\n\n工作原理：\n1. Hook 酷狗概念版 OkHttp 请求，捕获登录凭证\n2. 使用官方接口主动领取每日VIP\n3. 可选自动升级至概念版VIP（更高音质）\n4. 自动阻止领取弹窗，全程无感\n\n注意：需在 LSPosed/Xposed 中勾选酷狗概念版作用域，并关闭Xposed API调用保护</string>
+    <string name="status_default">未运行</string>
+    <string name="title_enabled">启用自动领取</string>
+    <string name="title_status">运行状态</string>
+    <string name="title_upgrade">自动升级概念版VIP</string>
+    <string name="trigger_no_app">未检测到酷狗概念版，请先安装</string>
+    <string name="trigger_sent">已发送触发信号，请保持酷狗概念版在前台运行</string>
+    <string name="xposed_description">酷狗概念版每日自动领取听歌会员</string>
+</resources>

@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+array xposed_scope
+id btn_refresh
+id btn_trigger
+id switch_enabled
+id switch_upgrade
+id text_status
+layout activity_main
+string app_name
+string btn_refresh
+string btn_trigger
+string desc_info
+string status_default
+string title_enabled
+string title_status
+string title_upgrade
+string trigger_no_app
+string trigger_sent
+string xposed_description

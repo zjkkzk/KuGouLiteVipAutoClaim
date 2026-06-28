@@ -1,0 +1,7 @@
+com.moekoe.xposed.kugoulite.app-pngs-0 D:\Android\project\test\KuGouLiteVipAutoClaim\app\build\generated\res\pngs\debug
+com.moekoe.xposed.kugoulite.app-resValues-1 D:\Android\project\test\KuGouLiteVipAutoClaim\app\build\generated\res\resValues\debug
+com.moekoe.xposed.kugoulite.app-packageDebugResources-2 D:\Android\project\test\KuGouLiteVipAutoClaim\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.moekoe.xposed.kugoulite.app-packageDebugResources-3 D:\Android\project\test\KuGouLiteVipAutoClaim\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.moekoe.xposed.kugoulite.app-debug-4 D:\Android\project\test\KuGouLiteVipAutoClaim\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.moekoe.xposed.kugoulite.app-debug-5 D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\debug\res
+com.moekoe.xposed.kugoulite.app-main-6 D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\res

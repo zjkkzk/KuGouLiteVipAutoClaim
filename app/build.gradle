@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.moekoe.xposed.kugoulite'
+    compileSdk 34
+    buildToolsVersion "34.0.0"
+
+    defaultConfig {
+        applicationId "com.moekoe.xposed.kugoulite"
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    compileOnly 'de.robv.android.xposed:api:82'
+}
+
+// Workaround: AGP 8.6.0 在 Windows 上不生成 stableIds.txt 导致 aapt2 报错
+// AGP task 在 afterEvaluate 后才创建，用 configureEach 确保匹配
+tasks.configureEach { task ->
+    if (task.name == 'processDebugResources' || task.name == 'processReleaseResources') {
+        task.doFirst {
+            def f = layout.buildDirectory.file("intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt").get().asFile
+            f.parentFile.mkdirs()
+            if (!f.exists()) {
+                f.text = ''
+                logger.lifecycle("Workaround: 已创建空 stableIds.txt")
+            }
+        }
+    }
+}

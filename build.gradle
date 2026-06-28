@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://api.xposed.info/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.6.0'
+    }
+    configurations.classpath.resolutionStrategy.eachDependency { details ->
+        // 用本地已缓存的 kotlin 1.9.22 替代 AGP 要求的 1.9.20，避免下载
+        if (details.requested.group == 'org.jetbrains.kotlin') {
+            def req = details.requested
+            if (req.version == '1.9.20') {
+                details.useVersion '1.9.22'
+                details.because '使用本地缓存的 kotlin 1.9.22 替代 1.9.20'
+            }
+        }
+    }
+}

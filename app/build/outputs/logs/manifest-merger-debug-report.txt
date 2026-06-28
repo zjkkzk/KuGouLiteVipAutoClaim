@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:2:1-45:12
+	package
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:6:22-74
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:7:5-8:53
+	tools:ignore
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:8:9-50
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:7:22-74
+queries
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:11:5-13:15
+package#com.kugou.android.lite
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:12:9-58
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:12:18-55
+application
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:15:5-43:19
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:15:5-43:19
+	android:extractNativeLibs
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	android:supportsRtl
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:18:9-41
+	android:icon
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:17:9-55
+	android:allowBackup
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:20:9-60
+meta-data#xposedmodule
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:23:9-71
+	android:value
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:23:48-68
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:23:20-47
+meta-data#xposeddescription
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:24:9-98
+	android:value
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:24:53-95
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:24:20-52
+meta-data#xposedminversion
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:25:9-73
+	android:value
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:25:52-70
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:25:20-51
+meta-data#xposedscope
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:26:9-88
+	android:resource
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:26:47-85
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:26:20-46
+activity#com.moekoe.xposed.kugoulite.MainActivity
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:31:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:33:27-74
+provider#com.moekoe.xposed.kugoulite.StateProvider
+ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:38:9-41:39
+	android:authorities
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:40:13-68
+	android:exported
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:41:13-36
+	android:name
+		ADDED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml:39:13-42
+uses-sdk
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\project\test\KuGouLiteVipAutoClaim\app\src\main\AndroidManifest.xml

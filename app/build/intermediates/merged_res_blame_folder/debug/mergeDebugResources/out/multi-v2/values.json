@@ -1,0 +1,37 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.moekoe.xposed.kugoulite.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "D:\\Android\\project\\test\\KuGouLiteVipAutoClaim\\app\\src\\main\\res\\values\\arrays.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "19",
+                        "endOffsets": "153"
+                    }
+                },
+                {
+                    "source": "D:\\Android\\project\\test\\KuGouLiteVipAutoClaim\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,8,7,12,9,4,6,5,11,10,3",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,361,314,574,406,166,268,215,516,453,103",
+                        "endColumns": "47,44,46,228,46,48,45,52,57,62,62",
+                        "endOffsets": "98,401,356,798,448,210,309,263,569,511,161"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "158,206,251,298,527,574,623,669,722,780,843",
+                        "endColumns": "47,44,46,228,46,48,45,52,57,62,62",
+                        "endOffsets": "201,246,293,522,569,618,664,717,775,838,901"
+                    }
+                }
+            ]
+        }
+    ]
+}
