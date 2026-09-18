@@ -1,13 +1,7 @@
-name: Build and Release
+name: Build Release
 
 on:
   workflow_dispatch:
-    inputs:
-      release:
-        description: "Create a GitHub Release"
-        required: true
-        default: true
-        type: boolean
   push:
     tags:
       - "v*"
@@ -17,7 +11,6 @@ permissions:
 
 jobs:
   build:
-    name: Build Release APK
     runs-on: ubuntu-latest
 
     steps:
@@ -29,31 +22,38 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-          cache: gradle
+
+      - name: Set up Gradle 8.7
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.7"
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Android SDK packages
+      - name: Install Android SDK
         run: |
-          sdkmanager "platforms;android-34" "build-tools;34.0.0"
+          yes | sdkmanager --licenses
+          sdkmanager \
+            "platform-tools" \
+            "platforms;android-34" \
+            "build-tools;34.0.0"
 
-      - name: Remove local Windows-only aapt2 override
+      - name: Remove local Windows configuration
         run: |
           sed -i '/^android\.aapt2FromMavenOverride=/d' gradle.properties
-
-      - name: Make Gradle wrapper executable
-        run: chmod +x gradlew
+          rm -f local.properties
 
       - name: Build Release APK
-        run: ./gradlew --no-daemon clean :app:assembleRelease
-
-      - name: Verify APK
         run: |
-          ls -lh app/build/outputs/apk/release/
-          test -n "$(find app/build/outputs/apk/release -maxdepth 1 -type f -name '*.apk' -print -quit)"
+          gradle --version
+          gradle clean :app:assembleRelease --no-daemon --stacktrace
 
-      - name: Upload APK artifact
+      - name: Find APK
+        run: |
+          find app/build/outputs/apk/release -type f -name "*.apk" -print
+
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: KuGouLiteVipAutoClaim-release
@@ -61,11 +61,8 @@ jobs:
           if-no-files-found: error
 
       - name: Create GitHub Release
-        if: github.event_name == 'push' || inputs.release == true
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || format('v{0}', github.run_number) }}
-          name: KuGouLiteVipAutoClaim ${{ github.ref_type == 'tag' && github.ref_name || format('v{0}', github.run_number) }}
           generate_release_notes: true
           files: app/build/outputs/apk/release/*.apk
-          fail_on_unmatched_files: true
